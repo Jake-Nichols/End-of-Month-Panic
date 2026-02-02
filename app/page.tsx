@@ -63,6 +63,7 @@ export default async function Page() {
           <thead>
             <tr>
               <th>PR</th>
+              <th>Repo</th>
               <th>Type</th>
               <th>Paired With</th>
               <th>Comments</th>
@@ -77,6 +78,7 @@ export default async function Page() {
                     {review.prTitle}
                   </a>
                 </td>
+                <td>{review.repo}</td>
                 <td>{review.reviewType}</td>
                 <td>{review.pairedWith}</td>
                 <td>{review.commentCount}</td>
@@ -152,7 +154,7 @@ export default async function Page() {
       <section className="section">
         <h2>Live Integration Checklist</h2>
         <ul>
-          <li>GitHub: add GITHUB_TOKEN, GITHUB_OWNER, GITHUB_REPO</li>
+          <li>GitHub: add GITHUB_TOKEN, GITHUB_REPOS</li>
           <li>ClickUp: add CLICKUP_TOKEN, CLICKUP_LIST_ID</li>
           <li>Harvest: add HARVEST_TOKEN, HARVEST_ACCOUNT_ID</li>
         </ul>

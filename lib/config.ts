@@ -4,8 +4,7 @@ export const config = {
   harvestToken: process.env.HARVEST_TOKEN ?? "",
   harvestAccountId: process.env.HARVEST_ACCOUNT_ID ?? "",
   clickupListId: process.env.CLICKUP_LIST_ID ?? "",
-  githubOwner: process.env.GITHUB_OWNER ?? "",
-  githubRepo: process.env.GITHUB_REPO ?? ""
+  githubRepos: process.env.GITHUB_REPOS ?? ""
 };
 
 export const hasLiveIntegrations =

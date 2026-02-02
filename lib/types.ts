@@ -4,6 +4,7 @@ export type PrReviewLog = {
   id: string;
   prTitle: string;
   prUrl: string;
+  repo: string;
   reviewType: ReviewType;
   pairedWith: string;
   commentCount: number;
